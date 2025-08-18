@@ -1,0 +1,22 @@
+/* google font link */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+@theme{
+  --font-primary: "Nunito", sans-serif;
+  --font-major: "Nunito Sans", sans-serif;
+  --font-secondary: "Caveat", cursive;
+  --color-greenLg: #1A685B;
+  --color-greenDr: #122F2A;
+  --color-yellowOp: #FFAC00
+}
+
+
+/* banner title: "Nunito Sans", sans-serif
+
+Nunito, sans-serif
+
+Caveat, cursive */
