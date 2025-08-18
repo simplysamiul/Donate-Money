@@ -1,15 +1,15 @@
-.charity-service-area{
+.charity-service-area {
     background: rgba(255, 255, 255, 0.4) url("../assets/gray-bg1-3.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-blend-mode:lighten
+    background-blend-mode: lighten
 }
 
-.charity-card img{
+.charity-card img {
     transition: transform 0.3s ease;
 }
 
-.charity-card:hover img{
+.charity-card:hover img {
     transform: scaleX(-1);
 }
