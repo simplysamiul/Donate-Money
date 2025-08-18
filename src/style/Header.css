@@ -41,3 +41,9 @@
     right: 180px;
     background: var(--color-yellowOp);
 }
+.arrow svg{
+    display: inline-block;
+}
+.header-donation-btn:hover .arrow svg{
+    transform: rotate(50deg);    
+}
