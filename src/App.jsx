@@ -1,12 +1,19 @@
+import { Outlet } from 'react-router-dom'
 import './App.css'
 
 function App() {
 
   return (
     <>
-      <div>
-        <h1 className="font-secondary text-yellowOp">Welcome to donate</h1>
-      </div>
+      <nav>
+        <h1>Navbar</h1>
+      </nav>
+      <main>
+        <Outlet />
+      </main>
+      <footer>
+          <h1>Footer</h1>
+      </footer>
     </>
   )
 }
