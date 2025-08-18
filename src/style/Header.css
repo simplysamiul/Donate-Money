@@ -1,0 +1,43 @@
+.header-area{
+    height: 85vh;
+    background: rgba(11, 29, 26, 0.6) url("../assets/hero_bg_1_2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-blend-mode: darken;
+    position: relative;
+}
+.header-shape{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.header-area p{
+    color: var(--color-yellowOp);
+    font-size: 38px;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+}
+.header-area p::before
+{
+    content: "";
+    width: 50px;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    left: 190px;
+    background: var(--color-yellowOp);
+}
+.header-area p::after{
+    content: "";
+    width: 50px;
+    height: 3px;
+    position: absolute;
+    top: 60%;
+    right: 180px;
+    background: var(--color-yellowOp);
+}
