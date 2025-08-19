@@ -17,3 +17,17 @@
 /* a.active{
   background-color: var(--color-yellowOp);
 } */
+
+.common-button{
+  background: var( --color-yellowOp);
+  font-family: 600;
+  padding: 25px 20px;
+  font-size: 16px;
+  color: white;
+  border-color: var( --color-yellowOp);
+  transition: 0.3s ease-in-out;
+}
+
+.common-button:hover{
+  background: var( --color-greenLg);
+}

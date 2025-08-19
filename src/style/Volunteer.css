@@ -1,0 +1,32 @@
+.become-volunteer-two:hover{
+    background: #122f2a79 url('../assets/cta-bg1-2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.become-volunteer-two{
+    background: rgba(0, 0, 0, 0.6) url('../assets/cta-bg1-2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    transition: 0.3s ease-in-out
+}
+.become-volunteer-one:hover{
+    background: #122f2a79 url('../assets/cta-bg1-1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    position: relative;
+}
+.become-volunteer-one{
+    background: rgba(0, 0, 0, 0.6) url('../assets/cta-bg1-1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    position: relative;
+    transition: 0.3s ease-in-out
+};
