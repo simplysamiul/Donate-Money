@@ -5,6 +5,7 @@ import Volunteer from '../components/Volunteer';
 import About from '../components/About';
 import NeedPeople from '../components/NeedPeople';
 import Companies from '../shared/Companies';
+import Faq from '../components/Faq';
 
 const HomePage = () => {
     return (
@@ -15,6 +16,7 @@ const HomePage = () => {
             <About />
             <NeedPeople />
             <Companies />
+            <Faq />
         </div>
     );
 };

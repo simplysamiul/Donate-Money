@@ -22,7 +22,7 @@ const Menubar1 = () => {
                         </ul>
                     </div>
                     <Link to="/" className="btn btn-ghost text-xl">
-                        <img src={logo} alt="Donate-Logo" />
+                        <img className="w-20 md:w-40 lg:w-60" src={logo} alt="Donate-Logo" />
                     </Link>
                 </div>
                 <div className="navbar-end">

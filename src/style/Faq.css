@@ -1,0 +1,28 @@
+.faq-image-container{
+    position: relative;
+}
+
+.faq-shape{
+    position: absolute;
+    top: 0;
+    right: 180px;
+}
+
+.faq-small-img{
+    border-radius: 10%;
+    filter: grayscale(100%);
+    position: absolute;
+    bottom: -80px;
+    right: 50px;
+    display: inline-block;
+    animation: bounce 3s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);   /* default position */
+  }
+  50% {
+    transform: translateY(-20px); /* move up */
+  }
+}
