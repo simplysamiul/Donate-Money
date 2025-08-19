@@ -30,4 +30,5 @@
 
 .common-button:hover{
   background: var( --color-greenLg);
+  cursor: pointer;
 }

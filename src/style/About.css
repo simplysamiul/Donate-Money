@@ -1,0 +1,9 @@
+.about-section-img{
+    position: relative;
+}
+
+.about-shape{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
