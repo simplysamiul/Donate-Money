@@ -9,8 +9,8 @@ const NeedPeople = () => {
             <div className='grid grid-cols-1 md:grid-cols-2'>
                 <div className='bg-greenLg'>
                     <div className='pt-20 w-10/12 lg:w-3/5 mx-auto pb-4'>
-                        <h2 className="text-white font-primary font-extrabold text-5xl lg:text-5xl mb-2">We Always Help The</h2>
-                        <h2 className="text-white font-primary font-extrabold text-5xl lg:text-6xl">Needy People</h2>
+                        <h2 className="text-white font-primary font-extrabold text-4xl lg:text-5xl mb-2">We Always Help The</h2>
+                        <h2 className="text-white font-primary font-extrabold text-4xl lg:text-5xl">Needy People</h2>
                         <p className="my-6 text-white">Discover the inspiring stories of individuals and communities transformed by our programs. Our success stories highlight the real-life impact of your donations.</p>
                         <div className='text-white w-4/5 mx-auto '>
                             <div className="flex items-center justify-between w-full border-b-1 border-gray-400 pb-4">
@@ -36,8 +36,8 @@ const NeedPeople = () => {
                         </div>
                     </div>
                 </div>
-                <div>
-                    <img src={needPeopleImg} alt="" />
+                <div className='h-full'>
+                    <img className='h-full object-cover' src={needPeopleImg} alt="" />
                 </div>
             </div>
         </div>

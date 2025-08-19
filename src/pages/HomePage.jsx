@@ -4,6 +4,7 @@ import CharityService from '../components/CharityService';
 import Volunteer from '../components/Volunteer';
 import About from '../components/About';
 import NeedPeople from '../components/NeedPeople';
+import Companies from '../shared/Companies';
 
 const HomePage = () => {
     return (
@@ -13,6 +14,7 @@ const HomePage = () => {
             <Volunteer />
             <About />
             <NeedPeople />
+            <Companies />
         </div>
     );
 };

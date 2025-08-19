@@ -6,7 +6,7 @@ import charitySer3 from '../assets/service-card-icon1-3.svg'
 const CharityService = () => {
     return (
         <div className='py-12 text-center charity-service-area mb-8'>
-            <div className='w-8/12 mx-auto'>
+            <div className=' 11/12 md:9/12 lg:w-8/12 mx-auto'>
                 <p className='font-bold font-secondary text-yellowOp text-4xl mb-6'>Charity Services</p>
                 <h2 className='font-primary font-extrabold text-5xl lg:text-6xl mb-2'>We Do it for all People</h2>
                 <h2 className='font-primary font-extrabold text-5xl lg:text-6xl mb-30'>Humanist Services</h2>

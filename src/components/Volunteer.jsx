@@ -2,7 +2,7 @@ import '../style/Volunteer.css';
 
 const Volunteer = () => {
     return (
-        <div className='w-8/12 mx-auto my-6'>
+        <div className='w-11/12 md:w-10/12 lg:w-8/12 mx-auto my-6'>
             {/* join vounteer */}
             <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
                 <div className='become-volunteer-one text-center rounded-2xl py-12 px-8 text-white'>
