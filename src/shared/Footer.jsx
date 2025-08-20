@@ -27,7 +27,7 @@ const Footer = () => {
                         </div>
                     </div>
                     {/* footer menu */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-15">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-items-start lg:justify-items-center gap-6 mt-15">
                         <div>
                             <img className="mb-4" src={footerLogo} alt="" />
                             <p className="text-gray-300 mb-4">Our secure online donation platform allows you to make contributions quickly and safely. Choose from various.</p>

@@ -1,0 +1,8 @@
+.contact-header{
+    background: rgba(46, 136, 121, 0.7) url('../assets/contact-header-img.png');
+    background-repeat: no-repeat;
+    background-position: start;
+    background-size: cover;
+    background-blend-mode: darken;
+    height: 50vh;
+}
