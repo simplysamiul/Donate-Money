@@ -1,18 +1,14 @@
-import { FaArrowRightLong, FaMapLocationDot } from "react-icons/fa6";
-import { Link } from "react-router-dom";
-import '../style/Contact.css';
+import { FaMapLocationDot } from "react-icons/fa6";
 import { LuPhoneCall } from "react-icons/lu";
 import { IoIosMail } from "react-icons/io";
 import contactPerson from '../assets/contact_1_1.png'
+import PageHeader from "../shared/PageHeader";
 
 
 const Contact = () => {
     return (
         <div>
-            <div className="text-center text-white contact-header flex flex-col items-center justify-center mb-40">
-                <h1 className="font-primary text-5xl md:text-6xl lg:text-7xl font-extrabold">Contact</h1>
-                <p className="flex justify-center items-center"><Link className="text-yellowOp mr-2 font-bold" to="/">Home</Link> <FaArrowRightLong /> <span className="ml-2">Contact</span> </p>
-            </div>
+            <PageHeader pageName="Contact" />
             {/* contact address */}
             <div className="w-10/12 lg:w-8/12 mx-auto pb-10">
                 {/* contact info */}

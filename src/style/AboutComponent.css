@@ -1,0 +1,28 @@
+.about-donar-card img{
+    transition: transform 0.5s ease-in-out;
+}
+
+.about-donar-card:hover .about-donar-card-img{
+    transform: scaleX(-1);
+}  
+
+/* image shape */
+
+.about-long-img{
+    position: relative;
+}
+
+.about-long-img-shape-1{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.about-long-img-shape-2{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.about-long-img{
+    filter: grayscale(100%);
+}
