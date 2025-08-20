@@ -3,6 +3,7 @@ import App from "../App";
 import HomePage from "../pages/HomePage";
 import DonatePage from "../pages/DonatePage";
 import DashboardPage from "../pages/DashboardPage";
+import Contact from "../components/Contact";
 
 const router = createBrowserRouter([
     {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
             {
                 path: "/donate",
                 element: <DonatePage />
+            },
+            {
+                path: "/contact",
+                element: <Contact />
             }
         ]
     },

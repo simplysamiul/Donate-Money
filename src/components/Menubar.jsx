@@ -11,10 +11,10 @@ const Menubar = () => {
                         {/* menu items */}
                         <div className='flex items-center space-x-8 font-semibold'>
                             <NavLink to="/">Home</NavLink>
-                            <NavLink to="/">About</NavLink>
-                            <NavLink to="/">Donations</NavLink>
-                            <NavLink to="/">Contact</NavLink>
-                            <NavLink to="/">Dashboard</NavLink>
+                            <NavLink to="/about">About</NavLink>
+                            <NavLink to="/donate">Donations</NavLink>
+                            <NavLink to="/contact">Contact</NavLink>
+                            <NavLink to="/dashboard">Dashboard</NavLink>
                         </div>
                     </div>
                     {/* login and donation button */}

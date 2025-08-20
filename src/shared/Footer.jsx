@@ -42,7 +42,7 @@ const Footer = () => {
                                 <li className="footr-item hover:text-yellowOp duration-300 cursor-pointer mb-3"><FiArrowUpRight className="footer-menu-icon" /> Our News</li>
                                 <li className="footr-item hover:text-yellowOp duration-300 cursor-pointer mb-3"><FiArrowUpRight className="footer-menu-icon" /> Our Campaign</li>
                                 <li className="footr-item hover:text-yellowOp duration-300 cursor-pointer mb-3"><FiArrowUpRight className="footer-menu-icon" /> Privacy policy</li>
-                                <li className="footr-item hover:text-yellowOp duration-300 cursor-pointer mb-3"><FiArrowUpRight className="footer-menu-icon" /> Contact Us</li>
+                                <Link to="/contact" className="footr-item hover:text-yellowOp duration-300 cursor-pointer mb-3"><FiArrowUpRight className="footer-menu-icon" /> Contact Us</Link>
                             </ul>
                         </div>
                         <div className="flex flex-col justify-center items-center">

@@ -15,10 +15,10 @@ const Menubar1 = () => {
                             tabIndex={0}
                             className="menu menu-sm dropdown-content rounded-box z-1 mt-3 w-52 p-2 shadow text-yellowOp font-bold bg-greenLg">
                                     <li><NavLink to="/">Home</NavLink></li>
-                                    <li><NavLink to="/">About</NavLink></li>
-                                    <li><NavLink to="/">Donations</NavLink></li>
-                                    <li><NavLink to="/">Contact</NavLink></li>
-                                    <li><NavLink to="/">Dashboard</NavLink></li>
+                                    <li><NavLink to="/about">About</NavLink></li>
+                                    <li><NavLink to="/donate">Donations</NavLink></li>
+                                    <li><NavLink to="/contact">Contact</NavLink></li>
+                                    <li><NavLink to="/dashboard">Dashboard</NavLink></li>
                         </ul>
                     </div>
                     <Link to="/" className="btn btn-ghost text-xl">
