@@ -4,6 +4,7 @@ import HomePage from "../pages/HomePage";
 import DonatePage from "../pages/DonatePage";
 import DashboardPage from "../pages/DashboardPage";
 import Contact from "../components/Contact";
+import AboutPage from "../pages/AboutPage";
 
 const router = createBrowserRouter([
     {
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
             {
                 path: "/", 
                 element: <HomePage />
+            },
+            {
+                path: "/about", 
+                element: <AboutPage />
             },
             {
                 path: "/donate",

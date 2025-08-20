@@ -5,6 +5,7 @@ import { FiArrowUpRight } from "react-icons/fi";
 import { FaFacebookF, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { IoLogoYoutube } from "react-icons/io5";
+import footerHandAnimation from '../assets/footer-bg-shape3.png';
 import '../style/Footer.css';
 
 
@@ -12,6 +13,8 @@ const Footer = () => {
     return (
         <div>
             <div className="footer-container">
+                {/* footer hand animation img */}
+                <img className="footer-hand-animation" src={footerHandAnimation} alt="" />
                 <div className=" w-10/12 mx-auto py-30 px-10">
                     {/* footer header */}
                     <div className="flex flex-col lg:flex-row justify-between items-center border-b-1 border-gray-400 py-12 mb-6 text-white">

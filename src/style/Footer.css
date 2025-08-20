@@ -59,3 +59,27 @@
     color: white;
     cursor: pointer;
 }
+
+/* footer hand animation */
+
+.footer-container{
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-hand-animation{
+    position: absolute;
+    right: -50px;
+    top: 250px;
+    width: 12%;
+    animation: bounce 4s ease-in infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);  /* default position */
+  }
+  50% {
+    transform: translateY(-20px); /* move up */
+  }
+}
