@@ -52,7 +52,7 @@ const Navbar = () => {
                         </div>
                     </div>
                     {/* social icon */}
-                    <div className='mx-6'>
+                    <div className='mx-6 hidden xl:block'>
                         <ul className='flex justify-between items-center space-x-4'>
                             <li className='border-1 border-gray-400 rounded-full p-3 flex items-center justify-center cursor-pointer hover:bg-greenLg hover:text-white duration-300'><a href=""><FaFacebookF /></a></li>
                             <li className='border-1 border-gray-400 rounded-full p-3 flex items-center justify-center cursor-pointer hover:bg-greenLg hover:text-white duration-300'><a href=""><FaXTwitter /></a></li>

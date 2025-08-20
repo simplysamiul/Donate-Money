@@ -6,19 +6,19 @@ import '../style/Faq.css';
 const Faq = () => {
     return (
         <div className=' my-12 lg:mt-15 lg:mb-30'>
-            <div className='grid grid-cols-1 lg:grid-cols-2 md:gap-5'>
+            <div className='grid grid-cols-1 xl:grid-cols-2 md:gap-5'>
                 {/* faq img */}
                 <div className='w-full faq-image-container'>
-                    <img className='w-full lg:w-4/5' src={faqImg} alt="" />
-                    <img className='hidden lg:block faq-shape' src={faqShape} alt="" />
-                    <img className='hidden lg:block faq-small-img' src={faqSmallImg} alt="" />
+                    <img className='w-full xl:w-4/5' src={faqImg} alt="" />
+                    <img className='hidden xl:block faq-shape' src={faqShape} alt="" />
+                    <img className='hidden xl:block faq-small-img' src={faqSmallImg} alt="" />
                 </div>
                 {/* faq content */}
-                <div className='w-full'>
+                <div className='w-full mt-15 mx-auto'>
                     <p className='text-yellowOp text-xl md:text-3xl m-2 font-secondary font-bold'>Frequently Asked Questions</p>
                     <h2 className='text-greenLg font-primary m-2 font-extrabold text-3xl md:text-4xl lg:text-5xl'>Have Any Questions For Us?</h2>
                     {/* faq question */}
-                    <div className='pt-10 md:w-4/5'>
+                    <div className='pt-10 w-full lg:w-4/5'>
                         <div className="collapse collapse-arrow bg-base-100 border border-base-300 mb-6">
                             <input type="radio" name="my-accordion-2" defaultChecked />
                             <div className="collapse-title text-2xl font-bold">What motivates you to donate to our charity?</div>
