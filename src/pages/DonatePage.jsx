@@ -1,9 +1,12 @@
+import DonateComponent from "../components/DonateComponent";
+import PageHeader from "../shared/PageHeader";
 
 
 const DonatePage = () => {
     return (
         <div>
-            this is donate page
+            <PageHeader pageName="Donate" />
+            <DonateComponent />
         </div>
     );
 };
