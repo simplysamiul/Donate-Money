@@ -5,6 +5,8 @@ import DonatePage from "../pages/DonatePage";
 import DashboardPage from "../pages/DashboardPage";
 import Contact from "../components/Contact";
 import AboutPage from "../pages/AboutPage";
+import LoginPage from "../pages/LoginPage";
+import SignUpPage from "../pages/SignUpPage";
 
 const router = createBrowserRouter([
     {
@@ -26,7 +28,15 @@ const router = createBrowserRouter([
             {
                 path: "/contact",
                 element: <Contact />
-            }
+            },
+            {
+                path: "/login",
+                element: <LoginPage />
+            },
+            {
+                path: "/signup",
+                element: <SignUpPage  />
+            },
         ]
     },
     {

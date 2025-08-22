@@ -5,7 +5,6 @@ import donationImg3 from '../assets/donation5-1-2-354x233.png';
 import donationImg4 from '../assets/donation2-2-354x233.png';
 import donationImg5 from '../assets/donation1-2-2.png';
 import donationImg6 from '../assets/donation6-2-354x233.png';
-import '../style/DonateComponent.css';
 import { toast } from "react-toastify";
 
 const DonateComponent = () => {

@@ -1,0 +1,46 @@
+import { Link } from 'react-router-dom';
+import googleICon from '../assets/google.svg';
+
+const Login = () => {
+
+    const handelLoginForm = (e) => {
+        e.preventDefault();
+    };
+
+
+    return (
+        <div className='w-11/12 mx-auto flex justify-center items-center my-25'>
+            <div className='w-full max-w-lg'> {/* limit form width */}
+                <div className="bg-base-100 w-full shrink-0 shadow-2xl p-6 rounded-xl">
+                    <div className="card-body">
+                        <form onSubmit={handelLoginForm} className="fieldset space-y-2">
+                            <label className="label text-sm font-bold">Email</label>
+                            <input name="email" type="email" className="input w-full" placeholder="Email" />
+
+                            <label className="label text-sm font-bold">Password</label>
+                            <input name="pass" type="password" className="input w-full" placeholder="Password" />
+
+                            <div>
+                                <a className="link link-hover text-sm">Forgot password?</a>
+                            </div>
+
+                            <button className="btn bg-greenLg mt-4 w-full hover:bg-yellowOp text-white">Login</button>
+                        </form>
+                        <p className="text-center text-gray-500">------------------- or ------------------</p>
+
+                        {/* social login */}
+                        <div>
+                            <button className='flex justify-center items-center w-full border-1 border-gray-500 py-2 space-x-2 btn'>
+                                <img className='w-7' src={googleICon} alt="Google-Icon" />
+                                <span className='font-bold'>Google Sign In</span>
+                            </button>
+                        </div>
+                        <p className='text-center mt-2 font-semibold'>Are you a new user ? <Link className='text-greenLg font-bold hover:underline' to="/signup">Create Account</Link></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default Login;

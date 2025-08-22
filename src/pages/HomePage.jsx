@@ -6,6 +6,7 @@ import NeedPeople from '../components/NeedPeople';
 import Companies from '../shared/Companies';
 import Faq from '../components/Faq';
 import About from '../shared/About';
+import { Helmet } from 'react-helmet';
 
 const HomePage = () => {
     return (

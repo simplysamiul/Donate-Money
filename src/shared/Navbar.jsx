@@ -5,6 +5,7 @@ import { FaXTwitter } from 'react-icons/fa6';
 import "../style/Navbar.css";
 import Menubar from '../components/Menubar';
 import Menubar1 from '../components/Menubar1';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -14,7 +15,7 @@ const Navbar = () => {
                 {/* navbar header */}
                 <div className='flex justify-between items-center pt-6 pb-10 relative'>
                     {/* logo */}
-                    <img src={logo} alt="Donate-Logo" />
+                    <Link to="/"><img src={logo} alt="Donate-Logo" /></Link>
                     {/* navbar header location */}
                     <div className='flex items-center space-x-8'>
                         {/* address */}
