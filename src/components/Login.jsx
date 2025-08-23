@@ -1,11 +1,31 @@
 import { Link } from 'react-router-dom';
 import googleICon from '../assets/google.svg';
+import { useContext } from 'react';
+import { AuthContext } from '../provider/AuthProvider';
 
 const Login = () => {
 
+    const {googleSignIn, signInUser} = useContext(AuthContext);
+
     const handelLoginForm = (e) => {
         e.preventDefault();
+        const form = e.target;
+        const email = form.email.value;
+        const pass = form.pass.value;
+        // sign in user with email and pass
+        signInUser(email, pass)
+        .then(res => {
+            console.log(res)
+        }).catch(err => console.log(err))
     };
+
+    // sign in with google
+    const handelGoogleSignIn = () =>{
+        googleSignIn()
+        .then(res => {
+            console.log(res)
+        }).catch(err => console.log(err))
+    }
 
 
     return (
@@ -30,7 +50,7 @@ const Login = () => {
 
                         {/* social login */}
                         <div>
-                            <button className='flex justify-center items-center w-full border-1 border-gray-500 py-2 space-x-2 btn'>
+                            <button onClick={handelGoogleSignIn} className='flex justify-center items-center w-full border-1 border-gray-500 py-2 space-x-2 btn'>
                                 <img className='w-7' src={googleICon} alt="Google-Icon" />
                                 <span className='font-bold'>Google Sign In</span>
                             </button>

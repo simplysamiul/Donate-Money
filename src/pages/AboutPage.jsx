@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+
 import AboutComponent from "../components/AboutComponent";
 import PageHeader from "../shared/PageHeader";
 
