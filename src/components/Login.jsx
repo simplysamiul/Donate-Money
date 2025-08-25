@@ -2,10 +2,11 @@ import { Link } from 'react-router-dom';
 import googleICon from '../assets/google.svg';
 import { useContext } from 'react';
 import { AuthContext } from '../provider/AuthProvider';
+import { toast } from 'react-toastify';
 
 const Login = () => {
 
-    const {googleSignIn, signInUser} = useContext(AuthContext);
+    const {googleSignIn, signInUser, setLoading, setUser, loading} = useContext(AuthContext);
 
     const handelLoginForm = (e) => {
         e.preventDefault();
@@ -15,16 +16,22 @@ const Login = () => {
         // sign in user with email and pass
         signInUser(email, pass)
         .then(res => {
-            console.log(res)
-        }).catch(err => console.log(err))
+            setUser(res.user);
+            setLoading(false);
+            toast.success("User Login Successfully....!")
+        }).catch(err => {
+            toast.error(err.message)
+            setLoading(false);
+        })
     };
 
     // sign in with google
     const handelGoogleSignIn = () =>{
         googleSignIn()
         .then(res => {
-            console.log(res)
-        }).catch(err => console.log(err))
+            setUser(res.user);
+            toast.success("User Login Successfully....!")
+        }).catch(err => toast.error(err.message))
     }
 
 
@@ -44,7 +51,8 @@ const Login = () => {
                                 <a className="link link-hover text-sm">Forgot password?</a>
                             </div>
 
-                            <button className="btn bg-greenLg mt-4 w-full hover:bg-yellowOp text-white">Login</button>
+                            {loading ? <span className="loading loading-spinner text-greenLg mx-auto"></span>
+                            :<button className="btn bg-greenLg mt-4 w-full hover:bg-yellowOp text-white">Login</button>}
                         </form>
                         <p className="text-center text-gray-500">------------------- or ------------------</p>
 
