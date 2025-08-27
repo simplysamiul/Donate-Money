@@ -1,7 +1,10 @@
 import { Link, NavLink } from 'react-router-dom';
 import { MdOutlineLogin } from 'react-icons/md';
+import { useContext } from 'react';
+import { AuthContext } from '../provider/AuthProvider';
 
 const Menubar = () => {
+    const {user, userLogOut} = useContext(AuthContext);
     return (
         <div>
             <div className='hidden lg:block'>
@@ -19,11 +22,12 @@ const Menubar = () => {
                     </div>
                     {/* login and donation button */}
                     <div>
-                        <Link to="/login">
+                        {user ? <button onClick={userLogOut} className="btn bg-yellowOp border-yellowOp text-white font-bold">Log Out</button>
+                        :<Link to="/login">
                             <button className='bg-yellowOp p-2 rounded-full flex justify-center items-center text-xl cursor-pointer'>
                                 <MdOutlineLogin />
                             </button>
-                        </Link>
+                        </Link>}
                     </div>
                 </div>
             </div>

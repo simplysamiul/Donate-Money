@@ -7,6 +7,7 @@ import Contact from "../components/Contact";
 import AboutPage from "../pages/AboutPage";
 import LoginPage from "../pages/LoginPage";
 import SignUpPage from "../pages/SignUpPage";
+import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([
     {
@@ -23,7 +24,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/donate",
-                element: <DonatePage />
+                element: <PrivateRoute><DonatePage /></PrivateRoute>
             },
             {
                 path: "/contact",
@@ -41,7 +42,7 @@ const router = createBrowserRouter([
     },
     {
         path: "/dashboard", 
-        element: <DashboardPage />
+        element: <PrivateRoute><DashboardPage /></PrivateRoute>
     },
     {
         path: "*",

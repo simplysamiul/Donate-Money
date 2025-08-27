@@ -1,10 +1,12 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
+import { toast } from "react-toastify";
 
 
 const SignUp = () => {
-    const {createUser} = useContext(AuthContext);
+    const navigate = useNavigate();
+    const {createUser, setLoading, setUser, loading} = useContext(AuthContext);
     const handelSignUpForm = (e) => {
         e.preventDefault();
         const form = e.target;
@@ -14,8 +16,14 @@ const SignUp = () => {
         // sign in with email and password
         createUser(email, pass)
         .then((res) => {
-            console.log(res)
-        }).catch(err => console.log(err))
+            setUser(res.user)
+            setLoading(false);
+            toast.success("Successfully Created Account ....!")
+            navigate("/");
+        }).catch(err =>{
+            setLoading(false);
+            toast.error(err.message)
+        })
 
     }
     return (
@@ -34,7 +42,8 @@ const SignUp = () => {
                                 <a className="link link-hover text-sm">Forgot password?</a>
                             </div>
 
-                            <button className="btn bg-greenLg mt-4 w-full hover:bg-yellowOp text-white">Create Account</button>
+                            {loading ? <span className="loading loading-spinner text-greenLg mx-auto"></span>
+                            :<button className="btn bg-greenLg mt-4 w-full hover:bg-yellowOp text-white">Create Account</button>}
                         </form>
                         <p className='text-center mt-2 font-semibold'>Already have an account ? <Link className='text-greenLg font-bold hover:underline' to="/login">Log In</Link></p>
                     </div>

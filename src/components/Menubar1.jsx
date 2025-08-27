@@ -1,8 +1,11 @@
 import { Link, NavLink } from "react-router-dom";
 import logo from '../assets/logo.png'
+import { useContext } from "react";
+import { AuthContext } from "../provider/AuthProvider";
 
 
 const Menubar1 = () => {
+    const {user, userLogOut} = useContext(AuthContext);
     return (
         <div className='bg-greenLg py-4'>
             <div className="navbar w-11/12 mx-auto">
@@ -26,7 +29,11 @@ const Menubar1 = () => {
                     </Link>
                 </div>
                 <div className="navbar-end">
-                    <Link to="/login" className="btn bg-yellowOp border-yellowOp text-greenDr font-bold">Login</Link>
+                    {
+                    !user ? <Link to="/login" className="btn bg-yellowOp border-yellowOp text-greenDr font-bold">Login</Link>
+                    : 
+                    <button onClick={userLogOut} className="btn bg-yellowOp border-yellowOp text-white font-bold">Log Out</button>
+                    }
                 </div>
             </div>
         </div>
