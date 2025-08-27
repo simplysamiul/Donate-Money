@@ -4,8 +4,10 @@ import needPeopleShape from "../assets/video_shape1_2.png";
 
 const NeedPeople = () => {
     return (
-        <div className='my-10 need-people-container'>
-            <img className='hidden lg:block need-people-shape' src={needPeopleShape} alt="" />
+        <div className='my-10 need-people-container relative'>
+            <div className='need-people-shape-container'>
+                <img className='hidden lg:block need-people-shape' src={needPeopleShape} alt="" />
+            </div>
             <div className='grid grid-cols-1 md:grid-cols-2'>
                 <div className='bg-greenLg'>
                     <div className='pt-20 w-10/12 lg:w-3/5 mx-auto pb-4'>
