@@ -1,6 +1,7 @@
 import { createContext, useEffect, useState } from "react";
-import { createUserWithEmailAndPassword, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
+import { createUserWithEmailAndPassword, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile  } from "firebase/auth";
 import { auth } from "../firebase/firebase.init";
+import { toast } from "react-toastify";
 
 
 const AuthContext = createContext(null);
@@ -28,12 +29,18 @@ const AuthProvider = ({children}) => {
         return signInWithEmailAndPassword(auth, email, pass);
     };
 
+    // update profile
+    const updateUser = (userInfo) => {
+        setLoading(true);
+        return updateProfile(auth.currentUser, userInfo)
+    }
+
     // log out user
 
     const userLogOut = () => {
         signOut(auth)
-        .then(() => console.log("Log out user"))
-        .catch(err => console.log(err))
+        .then(() => toast.success("Log out successfully ....!"))
+        .catch(err => toast.error(err.message))
     };
 
     // user tracker
@@ -56,6 +63,7 @@ const AuthProvider = ({children}) => {
         userLogOut,
         loading,
         setLoading,
+        updateUser,
         user
     }
     return (
